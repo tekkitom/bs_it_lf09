@@ -1,54 +1,73 @@
-\title{Situationsbeschreibung der Firma TKmin}
+\documentclass[a4paper,10pt]{scrreprt}
+%\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[siunitx,european]{circuitikz}
+\usepackage[german]{babel}
+% \usepackage[sc]{mathpazo}
+% \linespread{1.05}   % Palladio needs more leading (space between lines)
+% \usepackage{fourier}
+% \usepackage{tgschola}
+% \usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{eurosym}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage[pdfborder={0 0 0},colorlinks=true,linkcolor=blue]{hyperref}
 
-Die Firma TKmin stellt hochwertige Tiefkühlprodukte für Endverbraucher und
-Großkunden her.
+% \usepackage{listings}
+% Title Page
+\begin{document}
+  \title{Situationsbeschreibung der Firmengruppe TKmin}
+\author{Thomas Maul}
+\date{V 0.1 - im Aufbau\\ Stand: \today}%\\ 
+\maketitle
+\chapter{TKmin}
+Die Firma TKmin stellt hochwertige Tiefkühlprodukte für Endverbraucher und Großkunden her.
+
 Ihre Haupt Produktlinien sind Tiefkühlpizza und Eiscreme.
-Im Hauptwerk gibt es drei Gebäude. Gebäude 1 ist die Verwaltung mit der Geschäfts-
-leitung (GL). In Gebäude 2 ist die Produktion, in Gebäude 3 ist das Tiefkühllager
-(Rohwaren, Fertigprodukte)
-\section{Netzwerk Verwaltungsgebäude}
-Das Netzwerk ist historisch gewachsen und größtenteils auf Ethernet mit 1GB umge-
-stellt worden. Der Plan auf Bild 1 zeigt das Netzwerk, das am allgemeinen Firmen-
-Netzwerk angeschlossen ist. Teile der Verwaltung (EG, Gang 2) sind noch CAT 5
-verkabelt mit 100 MB Switch. Dieser Teil ist auch am Netzwerk der Firma angeschlos-
-sen.
-In der Verwaltung, EG, Gang 3 ist ein altes Netzwerk mit 10MB, thin Ethernet.
-Das Netzwerk ist vom übrigen Netz der Firma abgekoppelt. Die PCs haben Win 3.11
-und Win 95 - 98SE installiert.
-Im Verwaltungsgebäude (Keller) ist der SV und der GV der Verwaltung. Am GV ist
-auch das LAN der Administration und der Server angeschlossen. Der Server befindet
-sich in einem separaten Raum.
-Im allen Stockwerken des Gebäudes sind EV installiert. In Etage 1 und 2 gibt es
-20 Büro mit je 2 PCs und zugehörigen Telefonen (alle VoIP). Im Keller gibt es einen
-Arbeitsraum für die Administration (mit Tageslicht) und den Serverraum.
-Zusätzlich gibt es in allen Etagen je 5 WLAN-Access-Points.
-\section{Backbone-Netzwerk}
-Die Verbindung der Gebäude ist mit CAT 7 verlegt worden. Von Gebäude 1 zu Gebäude
-2 ist die Leitung unterirdisch verlegt, von Gebäude 1 zu Gebäude 3 oberirdisch (ca 5
-m über dem Boden)
 
-Abbildung 1: Netzwerkplan Verwaltungsgebäude
+Im Hauptwerk gibt es drei Gebäude. Gebäude 1 ist die Verwaltung mit der Geschäftsleitung (GL). In Gebäude 2 ist die Produktion, in Gebäude 3 ist das Tiefkühllager (Rohwaren, Fertigprodukte)
+
+\section{Netzwerk Verwaltungsgebäude}
+Das Netzwerk ist historisch gewachsen und größtenteils auf Ethernet mit 1GB umgestellt worden. Der Plan in Bild \ref{fig:NetzwerkplanTkminVerwaltung} zeigt das Netzwerk, das am allgemeinen Firmen-Netzwerk angeschlossen ist. Teile der Verwaltung (EG, Gang 2) sind noch CAT 5 verkabelt mit 100 MB Switch. Dieser Teil ist auch am Netzwerk der Firma angeschlossen.
+
+In der Verwaltung, EG, Gang 3 ist ein altes Netzwerk mit 10MB, thin Ethernet. Das Netzwerk ist vom übrigen Netz der Firma abgekoppelt. Die PCs haben Win 3.11 und Win 95 - 98SE installiert.
+
+Im Verwaltungsgebäude (Keller) ist der SV und der GV der Verwaltung. Am GV ist auch das LAN der Administration und der Server angeschlossen. Der Server befindet sich in einem separaten Raum.
+
+Im allen Stockwerken des Gebäudes sind EV installiert. In Etage 1 und 2 gibt es 20 Büro mit je 2 PCs und zugehörigen Telefonen (alle VoIP). Im Keller gibt es einen Arbeitsraum für die Administration (mit Tageslicht) und den Serverraum.
+
+Zusätzlich gibt es in allen Etagen je 5 WLAN-Access-Points.
+
+\section{Backbone-Netzwerk}
+Die Verbindung der Gebäude ist mit CAT 7 verlegt worden. Von Gebäude 1 zu Gebäude 2 ist die Leitung unterirdisch verlegt, von Gebäude 1 zu Gebäude 3 oberirdisch (ca 5
+m über dem Boden)
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{netzkplan_tkmin_verwaltung.png}
+    \caption{Netzwerkplan Verwaltungsgebäude}
+    \label{fig:NetzwerkplanTkminVerwaltung}
+\end{figure}
 \section{Netzwerksegmente und Switches im LAN}
-Das gesamte LAN der Firma ist im Bereich 172.120.0.0/16 installiert. Es gibt nur
-Switches. Ein Internet-Router verbindet den SV mit dem Internet (via ADSL 100k-
-Leitung).
-Alle Switche im Firmen-LAN sind aktuelle Modelle namenhafter Hersteller. Der
-Switch in Verwaltung EG, Gang 2 ist ebenfalls von einem namenhaften Hersteller, er
-ist jedoch von 2000.
+Das gesamte LAN der Firma ist im Bereich 172.120.0.0/16 installiert. Es gibt nur Switches. Ein Internet-Router verbindet den SV mit dem Internet (via ADSL 100k-Leitung).
+
+Alle Switche im Firmen-LAN sind aktuelle Modelle namenhafter Hersteller. Der Switch in Verwaltung EG, Gang 2 ist ebenfalls von einem namenhaften Hersteller, er ist jedoch von 2000.
+
 \section{Netzwerk Gebäude 2 und Gebäude 3}
-Teile der Produktion sind aus technischen Gründen noch 10MB, Ethernet. Die Rechner
-der Maschinen können nicht getauscht werden, da sie Teil der Steuerung sind und
+Teile der Produktion sind aus technischen Gründen noch 10MB, Ethernet. Die Rechner der Maschinen können nicht getauscht werden, da sie Teil der Steuerung sind und
 Sicherheitsanforderungen unterliegen.
-Die Übrigen Teile der Verkabelung sind CAT 7. Im LAN der Produktion (Gebäude
-2) befindet sich ein GV (Netzwerkschrank nahe Eingang) und drei EV für die Teile
-der Produktion. An allen EV sind Maschinen und PCs der Linien-Leitung (Meister)
+
+Die Übrigen Teile der Verkabelung sind CAT 7. Im LAN der Produktion (Gebäude 2) befindet sich ein GV (Netzwerkschrank nahe Eingang) und drei EV für die Teile der Produktion. An allen EV sind Maschinen und PCs der Linien-Leitung (Meister)
 angeschlossen.
 
 \subsection{Gebäude 3}
-In Gebäude 3 befindet sich nahe der Eingangstür ein Netzwerkschrank mit dem GV.
-Da nur wenige PCs im Büro sind (aktuell 3 Stück) sind keine EV verbaut.
+In Gebäude 3 befindet sich nahe der Eingangstür ein Netzwerkschrank mit dem GV. Da nur wenige PCs im Büro sind (aktuell 3 Stück) sind keine EV verbaut.
+
 \section{Geschäftsleitung}
-Die Geschäftsleitung besteht aus Dirk Schmidt. Er ist studierter Chemiker und hat
-große Erfahrung in der Lebensmitteltechnologie.
-Leitung der IT-Abteilung ist Jasper Schmidt, er ist Fachinformatiker Systeminte-
-gration.
+Die Geschäftsleitung besteht aus Dirk Schmidt. Er ist studierter Chemiker und hat große Erfahrung in der Lebensmitteltechnologie.
+
+Leitung der IT-Abteilung ist Jasper Schmidt, er ist Fachinformatiker Systemintegration.
+
+\chapter{MiniPreis}
+\end{document}
