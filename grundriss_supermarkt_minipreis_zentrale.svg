@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="grundriss_supermarkt_mueller_zentrale.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:zoom="0.6296875"
+     inkscape:cx="960"
+     inkscape:cy="539.95037"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect33"
+       width="380"
+       height="240"
+       x="1440"
+       y="740" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect137"
+       width="960"
+       height="460"
+       x="140"
+       y="20" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect137-3"
+       width="960"
+       height="460"
+       x="140"
+       y="600" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect273"
+       width="380"
+       height="180"
+       x="140"
+       y="20" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="180"
+       y="100"
+       id="text1369"><tspan
+         sodipodi:role="line"
+         id="tspan1367"
+         x="180"
+         y="100">Wohnung im EG</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="480"
+       y="280"
+       id="text2845"><tspan
+         sodipodi:role="line"
+         id="tspan2843"
+         x="480"
+         y="280"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan7171">Halle2</tspan>, </tspan><tspan
+         sodipodi:role="line"
+         x="480"
+         y="313.33337"
+         id="tspan7083">2 geschossig, unbeheizt (frostfrei)</tspan><tspan
+         sodipodi:role="line"
+         x="480"
+         y="346.66675"
+         id="tspan2847">2 Lager-PCs (vernetzt)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="480"
+       y="800"
+       id="text2845-6"><tspan
+         sodipodi:role="line"
+         id="tspan2843-7"
+         x="480"
+         y="800"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan9043">Halle1</tspan>, </tspan><tspan
+         sodipodi:role="line"
+         x="480"
+         y="833.33337"
+         id="tspan7083-5">2 geschossig, beheizt</tspan><tspan
+         sodipodi:role="line"
+         x="480"
+         y="866.66675"
+         id="tspan2847-3">1 Lager-PC (vernetzt)</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect12010"
+       width="300"
+       height="280"
+       x="800"
+       y="780" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="860"
+       y="900"
+       id="text13832"><tspan
+         sodipodi:role="line"
+         id="tspan13830"
+         x="860"
+         y="900"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Kühllager1</tspan><tspan
+         sodipodi:role="line"
+         x="860"
+         y="933.33337"
+         id="tspan13834">eingeschossig</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1520"
+       y="840"
+       id="text16542"><tspan
+         sodipodi:role="line"
+         id="tspan16540"
+         x="1520"
+         y="840"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Verwaltung</tspan><tspan
+         sodipodi:role="line"
+         x="1520"
+         y="873.33337"
+         id="tspan16544">2 geschossig, </tspan><tspan
+         sodipodi:role="line"
+         x="1520"
+         y="906.66675"
+         id="tspan17088">Satteldach (Ziegel)</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect17192"
+       width="640"
+       height="620"
+       x="1260"
+       y="20" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1340"
+       y="260"
+       id="text17372"><tspan
+         sodipodi:role="line"
+         id="tspan17370"
+         x="1340"
+         y="260"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Tiefkühllager</tspan><tspan
+         sodipodi:role="line"
+         x="1340"
+         y="293.33337"
+         id="tspan17374">3 geschossig</tspan><tspan
+         sodipodi:role="line"
+         x="1340"
+         y="326.66675"
+         id="tspan1799">(alternativ: </tspan><tspan
+         sodipodi:role="line"
+         x="1340"
+         y="360.00012"
+         id="tspan1801">  1 geschossig, Hochregale (5 Reihen))</tspan><tspan
+         sodipodi:role="line"
+         x="1340"
+         y="393.3335"
+         id="tspan4083" /><tspan
+         sodipodi:role="line"
+         x="1340"
+         y="426.66687"
+         id="tspan17376">2 PCs (vernetzt)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1680"
+       y="680"
+       id="text20144"><tspan
+         sodipodi:role="line"
+         id="tspan20142"
+         x="1680"
+         y="680">Zufahrt</tspan><tspan
+         sodipodi:role="line"
+         x="1680"
+         y="713.33337"
+         id="tspan28328">(dauerhaft offen)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1160"
+       y="800"
+       id="text21438"><tspan
+         sodipodi:role="line"
+         id="tspan21436"
+         x="1160"
+         y="800">Hof und Parkplätze</tspan></text>
+    <rect
+       style="fill:#008000;stroke:#008000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect21542"
+       width="1780"
+       height="20"
+       x="140"
+       y="1060" />
+    <rect
+       style="fill:#008000;stroke:#008000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect21544"
+       width="20"
+       height="320"
+       x="1900"
+       y="740" />
+    <rect
+       style="fill:#008000;stroke:#008000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect21546"
+       width="1399.9999"
+       height="20"
+       x="520"
+       y="0" />
+    <rect
+       style="fill:#008000;stroke:#008000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect21548"
+       width="20"
+       height="620"
+       x="1900"
+       y="20" />
+    <rect
+       style="fill:#008000;stroke:#008000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       id="rect21550"
+       width="20"
+       height="880"
+       x="120"
+       y="200" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1120"
+       y="1040"
+       id="text22799"><tspan
+         sodipodi:role="line"
+         id="tspan22797"
+         x="1120"
+         y="1040">Das Gelände ist von einer 2,5m hohen Hecke umschlossen.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="160"
+       y="540"
+       id="text26443"><tspan
+         sodipodi:role="line"
+         id="tspan26441"
+         x="160"
+         y="540">&lt; Die Hecke ist hier löchrig, </tspan><tspan
+         sodipodi:role="line"
+         x="160"
+         y="573.33337"
+         id="tspan26445">einige Pflanzen sind abgestorben oder welk</tspan></text>
+    <path
+       id="path27772"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1120,420 20,20 m 40,-20 h -60 l 20,-20" />
+    <path
+       id="path27772-5"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1120,680 20,20 m 40,-20 h -60 l 20,-20" />
+    <path
+       id="path27772-6"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1120,860 20,20 m 40,-20 h -60 l 20,-20" />
+    <path
+       id="path27772-6-9"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1420,940 -20,20 m -40,-20 h 60 l -20,-20" />
+    <path
+       id="path27772-6-9-1"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 120,40 100,60 M 60,40 h 60 L 100,20" />
+    <path
+       id="path27772-2"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1340,660 -20,20 m 20,40 v -60 l 20,20" />
+  </g>
+</svg>
