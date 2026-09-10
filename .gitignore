@@ -3,3 +3,17 @@
 *.toc
 *.log
 *.synctex.gz
+*.opf
+*/META*
+*/OEBPS*
+*-epub3*
+*.4tc
+*.4ct
+*.css
+*.dvi
+*.idv
+*.lg
+*.ncx
+*.tmp
+*.xhtml
+*.xref

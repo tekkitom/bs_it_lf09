@@ -20,19 +20,19 @@
 \begin{document}
   \title{Situationsbeschreibung der Firmengruppe TKmin}
 \author{Thomas Maul}
-\date{V 0.1 - im Aufbau\\ Stand: \today}%\\
+\date{V 0.90 - im Aufbau\\ Stand: \today}%\\
 \maketitle
 \tableofcontents
 \chapter{TKmin}
-Die Firma TKmin  GmbH stellt hochwertige Tiefkühlprodukte für Endverbraucher und Großkunden her. Ihre Haupt Produktlinien sind Tiefkühlpizza und Eiscreme.
+Die Firma TKmin  GmbH stellt hochwertige Tiefkühlprodukte für Endverbraucher und Großkunden her. Ihre Haupt-Produktlinien sind Tiefkühlpizza und Eiscreme.
 
-Im Hauptwerk gibt es drei Gebäude. Gebäude 1 ist die Verwaltung mit der Geschäftsleitung (GL). In Gebäude 2 ist die Produktion, in Gebäude 3 ist das Tiefkühllager (Rohwaren, Fertigprodukte)
+Im Hauptwerk der Firma gibt es drei Gebäude. Gebäude 1 ist die Verwaltung mit der Geschäftsleitung (GL). In Gebäude 2 ist die Produktion, in Gebäude 3 ist das Tiefkühllager (Rohwaren, Fertigprodukte).
 
 \section{Netzwerk Verwaltungsgebäude}
-Das Netzwerk ist historisch gewachsen und größtenteils auf Ethernet (CAT 5e) mit 1\,GB umgestellt worden. Der Plan in Bild \ref{fig:NetzwerkVerwaltung} zeigt das Netzwerk, das am allgemeinen Firmen-Netzwerk angeschlossen ist. Teile der Verwaltung (EG, Gang 2) sind noch ältere CAT 5 Kabel verlegt. Dort ist auch ein älterer 100 MB Switch. Dieser Teil ist am Netzwerk der Firma angeschlossen.
+Das Netzwerk ist historisch gewachsen und größtenteils auf Ethernet (CAT 5e) mit 1\,GB umgestellt worden. Der Plan in Bild \ref{fig:NetzwerkVerwaltung} zeigt das Netzwerk, das am allgemeinen Firmen-Netzwerk angeschlossen ist. Teile der Verwaltung (EG, Gang 2) sind noch ältere CAT 5 Kabel verlegt. Dort ist auch noch ein älterer 100 MB Switch. Dieser Teil ist am Netzwerk der Firma angeschlossen.
 
 \subsection{Labor-Netzwerk}
-In der Verwaltung, OG 1, Gang 3 ist ein altes Netzwerk mit 10MB, thin Ethernet. Das Netzwerk ist vom übrigen Netz der Firma abgekoppelt. Die PCs haben Win 3.11 und Win 95 - 98SE installiert. Das Netzwerk wird für spezielle Laborgeräte benötigt. Eine Umstellung der PCs ist nicht möglich.
+In der Verwaltung, OG 1 ist ein altes Netzwerk mit 10MB, thin Ethernet (10Base2). Das Netzwerk ist vom übrigen Netz der Firma abgetrennt. Die PCs haben Win 3.11 und Win 95 bis 98SE installiert. Das Netzwerk wird für spezielle Laborgeräte benötigt. Eine Umstellung der PCs ist nicht möglich.
 
 \subsection{Server und Administrations-Bereich}
 Im Verwaltungsgebäude (Keller) ist der SV und der GV der Verwaltung. Am GV ist auch das LAN der Administration und der Server angeschlossen. Der Server befindet sich in einem separaten Raum.
@@ -40,26 +40,20 @@ Im Verwaltungsgebäude (Keller) ist der SV und der GV der Verwaltung. Am GV ist 
 Im Keller gibt es einen Arbeitsraum für die Administration (mit Tageslicht) und den Serverraum.
 
 \subsection{Weitere Stockwerke, Telefon}
-Im allen Stockwerken des Gebäudes sind EV installiert. In Etage 1 und 2 gibt es 20 Büro mit je 2 PCs und zugehörigen Telefonen (alle VoIP).  Zusätzlich gibt es in allen Etagen je 5 WLAN-Access-Points.
+Im allen Stockwerken des Gebäudes sind EV installiert. In Etage 1 und 2 gibt es je 20 Büro mit je 2 PCs und zugehörigen Telefonen (alle VoIP).  Zusätzlich gibt es in allen Etagen je 5 WLAN-Access-Points in den Fluren (Wandmontage).
 
-\begin{figure}
- \includegraphics[width=.7\textwidth]{netzkplan_tkmin_verwaltung}
- % netzkplan_tkmin_verwaltung.ps: 683x436 px, 72dpi, 24.09x15.38 cm, bb=0 0 683 436
- \caption{Netzwerkplan Verwaltungsgebäude}
- \label{fig:NetzwerkVerwaltung}
-\end{figure}
 
 % \enlargethispage{\baselineskip}
 \section{Backbone-Netzwerk}
-Die Verbindung der Gebäude ist mit CAT 7 verlegt worden. Von Gebäude 1 zu Gebäude 2 ist die Leitung unterirdisch  verlegt, von Gebäude 1 zu Gebäude 3 oberirdisch (ca 5 m über dem Boden)
+Die Verbindung der Gebäude ist mit CAT 7 verlegt worden. Von Gebäude 1 zu Gebäude 2 ist die CAT 7-Leitung unterirdisch  verlegt worden. Zwischen Gebäude 1 zu Gebäude 3 wurde die CAT 7-Leitung oberirdisch verlegt (ca. 5 m über dem Boden).
 
 \section{Netzwerksegmente und Switches im LAN}
-Das gesamte LAN der Firma ist im Bereich 172.120.0.0/16 installiert. Es gibt nur Switches. Ein Internet-Router verbindet den SV mit dem Internet (via ADSL 100k-Leitung).
+Das gesamte Netzwerk der Firma ist als privates LAN im Bereich 172.120.0.0/16 installiert. Es gibt nur Switches. Ein Internet-Router verbindet den SV mit dem Internet (via ADSL 100k-Leitung).
 
-Alle Switche im Firmen-LAN sind aktuelle Modelle namenhafter Hersteller. Der Switch in Verwaltung EG, Gang 2 ist ebenfalls von einem namenhaften Hersteller, er ist jedoch von 2000.
+Alle Switche im Firmen-LAN sind aktuelle Modelle namenhafter Hersteller. Der Switch in Verwaltung EG, Gang 2 (100 MB) ist ebenfalls von einem namenhaften Hersteller, er ist jedoch aus dem Jahr 2000.
 
-\section{Netzwerk Gebäude 2 und Gebäude 3}
-Teile der Produktion sind aus technischen Gründen noch 10MB, Ethernet. Die Rechner der Maschinen können nicht getauscht werden, da sie Teil der Steuerung sind und Sicherheitsanforderungen unterliegen.
+\section{Netzwerk in Gebäude 2 und Gebäude 3}
+Teile der Produktion sind aus technischen Gründen noch 10MB, Ethernet (10BaseT und 10Base2). Die Rechner der Maschinen können nicht getauscht werden, da sie Teil der Steuerung sind und Sicherheitsanforderungen unterliegen. Bei Austausch der PCs müsste die vollständige Maschine neu nach aktuellem stand auf Arbeitssicherheit geprüft werden.
 
 Die Übrigen Teile der Verkabelung sind CAT 7. Im LAN der Produktion (Gebäude 2) befindet sich ein GV (Netzwerkschrank nahe Eingang) und drei EV für die Teile der Produktion. An allen EV sind Maschinen und PCs der Linien-Leitung (Meister) angeschlossen.
 
@@ -67,27 +61,24 @@ Die Übrigen Teile der Verkabelung sind CAT 7. Im LAN der Produktion (Gebäude 2
 In Gebäude 3 (Lager) befindet sich nahe der Eingangstür ein Netzwerkschrank mit dem GV. Da nur wenige PCs im Büro sind (aktuell 3 Stück) sind keine EV verbaut.
 
 \section{Geschäftsleitung}
-Die Geschäftsleitung besteht aus Dirk Schmidt. Er ist studierter Chemiker und hat große Erfahrung in der Lebensmitteltechnologie.
+Die Geschäftsleitung besteht aus Dirk Schmidt. Er ist studierter Chemiker und hat große Erfahrung in der Lebensmitteltechnologie. Im Bereich der IT ist Dirk Schmidt bekennender Laie.
 
-Leitung der IT-Abteilung ist Jasper Schmidt (Sohn vom Chef), er ist Fachinformatiker Systemintegration.
+Die Leitung der IT-Abteilung hat Jasper Schmidt (Sohn vom Chef), er ist Fachinformatiker Systemintegration Jasper hat im Sommer die Abschlussprüfung bestanden.
 
-\section{Neues Personal und Unternehmenskultur}
-Im Unternehmen erfolgt die Einarbeitung zur Zeit wie folgt:
-Ein Mitglied der Geschäftsleitung oder der Personalabteilung begrüßt die neue Person in der Personalabteilung.
+\section{Unternehmenskultur}
+Das Unternehmen pflegt das Konzept der offenen Tür. Die Türen werden nur bei vertraulichen Gesprächen geschlossen.
 
-Die neue Person wird zum Arbeitsplatz begleitet und erhält dort als Ausdruck alle Zugangsdaten (persönliche und allgemeine für
-Fernzugriff auf Server, ...). Unabhängig, welche Arbeiten die Person ausführen soll.
-
+Im Unternehmen erfolgt die Einarbeitung neuer Mitarbeiterinnen und Mitarbeiter zurzeit wie folgt:
 \begin{itemize}
- \item Die Person erhält einen Schlüssel zur Haustür.
+ \item Ein Mitglied der Geschäftsleitung oder der Personalabteilung begrüßt die neue Person in der Personalabteilung.
+ \item Die neue Person wird zum Arbeitsplatz begleitet und erhält dort als Ausdruck alle Zugangsdaten (persönliche und allgemeine für Fernzugriff auf Server, ...). Unabhängig, welche Arbeiten die Person ausführen soll.
+ \item Die Person erhält einen Schlüssel zur Haustür der Gebäude.
  \item Sie wird informiert, welche Arbeiten sie durchführen soll und
  \item wo sich die Teeküche, Kantine und Toiletten befinden.
 \end{itemize}
 
-Das Unternehmen pflegt das Konzept der offenen Tür. Die Türen werden nur bei vertraulichen Gesprächen geschlossen.
-
 \chapter{MiniPreis}
-Die Firma TKmin GmbH hat – zur Stärkung des Absatzes – eine kleinere Kette von Supermärkten (Supermarkt MiniPreis GmbH) gekauft. MiniPreis  wird als eigenständige Firma weitergeführt.
+Die Firma TKmin GmbH hat – zur Stärkung des Absatzes – eine kleinere Kette von Supermärkten (Supermarkt MiniPreis GmbH) gekauft. MiniPreis  wird als eigenständige Firma im Firmenverbund Dirk Schmidt Chemische Dünger\footnote{Die Erste Firma im Firmenverbund ist Chemische Dünger, sie produziert und verkauft Kunstdünger -- Die IT der Firma wird hier -- auf ausdrücklichen Wunsch von Dirk und Jasper Schmidt -- nicht betrachtet} weitergeführt.
 
 Nach einer ersten Besichtigung wurde festgestellt, dass die IT-Infrastruktur vom MiniPreis angepasst werden soll. Um die Geschäftsabläufe zu optimieren, soll in mehreren Stufen die IT (unter anderem) vereinheitlicht werden.
 \section{Ausgangssituation MiniPreis}
@@ -96,40 +87,105 @@ Die Supermarktkette MiniPreis hat in der Zentrale und einigen Filialen (Beispiel
 
 Für die Umstellung sind folgende Schritte geplant:
 \begin{enumerate}
- \item Datenaustausch per Cloud – soll zügig erfolgen (Wunsch der Geschäftsleitung). \\DSGVO muss gewährleistet werden, Vorgabe vom Datenschutz.
- \item Vernetzung
+ \item Datenaustausch per Cloud – soll zügig erfolgen (Wunsch der neuen Geschäftsleitung). \\Die DSGVO muss gewährleistet werden, Vorgabe vom Datenschutz.
+ \item Vernetzung der Filialen mit der Zentrale
  \begin{enumerate}
   \item via VPN.
   \item via eigener Leitung (falls notwendig)
  \end{enumerate}
+ \item Zusammenfassung aller Teilnetze zu einem Netzwerk.
+ \item In allen Filialen soll zügig ein offenes Kunden-WLAN angeboten werden.
 \end{enumerate}
 
 \section{Filialen}
-Nach einer Besichtigung wurde festgestellt, das einige Filialen mit Layer-2 Switchen vernetzt sind (ältere CAT 5 Leitungen, UTP, F/UTP). Andere sind mit 10Base2 vernetzt.
-
+Bei Besichtigungen der Filialen wurde festgehalten, das einige Filialen mit Layer-2 Switchen vernetzt sind (ältere CAT 5 Leitungen, UTP, F/UTP). Andere sind mit 10Base2 vernetzt.
+\enlargethispage{\baselineskip}
 In der Filiale sind in der Regel folgende Netzwerkgeräte:
 \begin{itemize}
  \item 3 PCs (Filialleitung, Personal-PC),
  \item 3 Kassen (mit jeweils einem PC),
- \item 4 Drucker (3 Bon-Drucker, 1 Laser für Filialleitung),
+ \item 4 Drucker (3 Bon-Drucker in der Gemüseabteilung und an den Frischetheken, 1 Laserdrucker für Filialleitung),
  \item 5 Kühlgeräte an drei Positionen (Steuerung soll per Fernwartung erreichbar sein),
+ \item 1 - 2 Automaten zur Rückgabe von Pfandflaschen.
  \item 1 Server (mit USV\footnote{Teilweise sind die USV der Server Netzwerkfähig}),
  \item 1 Layer-2 Switch (24 Port)
 \end{itemize}
 
-\section{Regionallager und Verwaltung}
-An einem Standort befindet sich die Filiale in einem Gebäude. Im Nachbargebäude ist ein Regionallager der Supermarktkette. Oberhalb der Filiale soll in zwei Geschossen die Verwaltung von MiniPreis einziehen.
-Die drei Netzwerke (Filiale, Regionallager, Verwaltung) sollen gekoppelt werden. Dabei sollen die Netze aber nicht zu einem großen Netzwerk verschmolzen werden.
+\subsection{Detaillierte Aufstellung der Filialen}
+\begin{itemize}
+ \item 2 Filialen haben nur einen PC im Büro und den Kassen PC, beide sind nicht vernetzt. Der BüroPC ist ein älteres Modell (Röhrenmonitor, ein PC 80486, der andere Pentium 2), die PCs sind nicht mit dem Internet verbunden. Betriebssystem: Windows 3.11
+ \item 2 Filialen haben ein 10BaseT Netzwerk mit CAT 5 Leitungen. Im Büro befinden sich jeweils 2 PCs (Pentium 4), sie waren per ISDN angebunden, zurzeit gibt es keine Vernetzung nach außen. Der KassenPC ist nicht vernetzt. Betriebssystem: Windows 95
+ \item 2 Filialen wurden vor einigen Jahren modernisiert, sie verfügen über PCs mit Core i3 (Broadwell) und Windows 7 home, das Netzwerk ist Cat 5e, im Büro ist ein Switch mit 8 Ports, zurzeit sind 4 Ports belegt. Die Anbindung erfolgt über VDSL (50 MBit). In jeder Filiale stehen zwei Kassen PCs, sie sind im LAN eingebunden.
+ \item 2 Filialen verfügen über zwei BüroPCs mit i3 (10100) und Cat 7 Netzwerk. Die Anbindung ist via VDSL (50 MBit). In jeder Filiale stehen zwei Kassen PCs, sie sind im LAN eingebunden. Betriebssystem: Windows 7 home
+ \item 2 Filialen verfügen über zwei BüroPCs mit i5 (11600K) und Cat 7 Netzwerk. Die Anbindung ist via Glasfaser (400MBit). In jeder Filiale stehen zwei Kassen PCs, sie sind im LAN eingebunden. Betriebssystem: Windows 7 home
+\end{itemize}
 
-\begin{figure}
- \includegraphics[width=.9\textwidth]{grundriss_supermarkt_v1_2.png}
- % grundriss_supermarkt_v1_2.png: 1075x618 px, 96dpi, 28.45x16.35 cm, bb=0 0 806 464
- \caption{Grundriß eines Supermarkts (Beispiel)}
- \label{fig:GrundrissSupermarkt}
-\end{figure}
+
+\section{Regionallager und Verwaltung}
+An einem Standort befindet sich die Filiale in einem Gebäude. Im Nachbargebäude ist das Regionallager der Supermarktkette. Oberhalb der Filiale soll in zwei Geschossen die Verwaltung von MiniPreis einziehen.
+Die drei Netzwerke (Filiale, Regionallager, Verwaltung) sollen gekoppelt werden. Dabei sollen die Netze aber nicht zu einem großen Netzwerk verschmolzen werden. Ein Übersichtsplan der Zentrale befindet sich in Bild \ref{fig:LageplanMiniPreisZentrale}
+
+\section{Netzwerk der Zentrale}
+Die Zentrale verfügt über: 10 PCs, es ist eine Mischung aus
+\begin{itemize}
+ \item Core i3 (je zwei 7100, 8100),
+ \item i5 (je drei 8100), und
+ \item zwei i5 (10400)
+\end{itemize}
+
+Der Server ist ein Pentium 4 mit 1800 MHz, DDR3 DIMM 8 GB, GiB LAN. System: 256 GB SSD, Daten 3 * 2 TB HDD (Raid 1), SCSI-Karte
+mit DAT-Backup-Streamer.
+
+Das Lan in der Zentrale ist teilweise 10BaseT, es existiert noch im Lager 10Base2 (2 PCs, Pentium 4)
+
+Alle PCs in der Zentrale haben Win 7 home installiert und geben teilweise Verzeichnisse frei. Es gibt keine feste Regel wer welche Daten lesen oder schreiben darf.
+\section{Aufteilung des Verwaltungsgebäudes }
+\subsection{Erdgeschoss}
+\begin{itemize}
+ \item Empfang (Tisch ohne Aufsatz nahe Eingangstür mit Laptop)
+ \item zwei Büros a 2 Personen Einkauf
+ \item ein Büro a 2 bis 3 Personen Einkauf (Azubis)
+ \item Küche und Pausenraum
+\end{itemize}
+
+Das Erdgeschoss ist ebenerdig, ohne Stufe erreichbar.
+
+\subsection{Obergeschoss}
+\begin{itemize}
+ \item Geschäftsleitung mit großem Tisch für Besprechungen
+ \item Personalbüro (2 Personen, machen auch Sekretariat für Geschäftsleitung)
+ \item zwei Büros a 2 Personen Logistik
+ \item Am Empfang steht ein Laptop (i3, (8130U)), der per WLAN (WEP-Ver\-schlüs\-se\-lung) im LAN angeschlossen ist.
+\end{itemize}
+
+\subsection{Infrastruktur der Firmenzentrale}
+Der Internetzugriff erfolgt über TV-Kabel\footnote{Der Kabelanbieter ist ein kleineres, regionales Unternehmen. Es sind nur wenige Verteiler vorhanden und viele Kunden an einem Verteiler abgeschlossen. Der Ausbau der Infrastruktur soll zeitnah erfolgen.}. Telefon-Leitung liegt (auch DSL 1000 möglich). Die Zentrale ist außerhalb auf einem ehemaligen
+Aussiedlerhof (ca. 3 km von der Stadt entfernt), nahe einer Umgehungsstraße, die Straße verläuft parallel zu Halle 1 / Tiefkühllager. Ein Glasfaserausbau würde 10 000 EUR kosten.
+
+Das Verwaltungsgebäude der Zentrale ist zweigeschossig. Die Geschäftsleitung sitzt im Obergeschoss, im Erdgeschoss ist ein kleiner Tresen für den Empfang, er ist nicht durchgängig besetzt. Die Außentür und die Fenster sind Stand 1970er, Holzrahmen, das Schloss der Haustür klemmt. Abends schließt die letzte Person ab (es kommt vor, dass dies vergessen wird). Es gibt ca. 30 Schlüssel. Im Haus sind die Türen nicht verschlossen.
+
+Der Server, TV-Modem und ein zentraler Switch (100 MBit) stehen im Keller auf dem Fußboden. Im Obergeschoss gibt es einen zweiten Switch für das Obergeschoss. Im Erdgeschoss ist ein AP installiert. Das Passwort ist SuperMuellerInternet und steht auf einem Blatt an der Tür zum IT
+Beauftragten. IT beauftragte sind in der Regel Azubis, da sie sich eher mit IT auskennen, als das übrige Personal. Die Firma bildet Kaufleute im
+Einzelhandel aus. Die Azubis wechseln im Rhythmus von 3 bis 4 Monaten zwischen Zentrale und den Filialen. Sie sind in der Regel während der
+Ausbildung 2-mal in der Zentrale eingesetzt.
+
+Auf dem Hof ist eine Wohnung, die zeitweise bewohnt war, seit einigen Jahren ist sie ungenutzt. Die Wohnung befindet sich in Halle 2. Sie verfügt über einen separaten Eingang. Die Wohnung soll mittelfristig als Arbeitsplätze für die Logistik, Azubis Logistik und Pausenraum, Sozialräume für die Logistik verwendet werden. Die Elektroinstallation ist nicht modernisiert worden (Stand 1970er) es gibt in der Wohnung einen Telefonanschluss aber kein Netzwerk.
+
+\subsection{Stromversorgung}
+\textbf{Hinweis:} Dieser Abschnitt ist primär für Azubis IT-Sys\-tem\-elek\-tro\-ni\-ke\-rin / IT-Sys\-tem\-elek\-tro\-ni\-ker.
+
+Im Verwaltungsgebäude befindet sich im Dachgeschoss der Stromanschluss (Dachständer). Er ist mit 3$\sim$, je 125A abgesichert. Die Elektroinstallation ist Stand der
+1970er und wurde punktuell umgebaut. Die Geschäftsleitung und Teile vom EG sind als TNS ausgeführt (Umbau 2005), in den übrigen Räumen im Verwaltungsgebäude sind TNC. Die Installation der Hallen wurde 2015 modernisiert, sie verfügen über LED-Beleuchtung und TNS-Netz.
+
+Die Kühllager (Küllager1 und Tiefkühllager) sind mit einer lokalen Überwachung ausgestattet. Eine Hupe befindet sich auf der Hof-Seite. Die
+Überwachung kontrolliert die Temperatur und die Dichtigkeit der Kühlanlage (Leckage)
+
+Auf dem Gelände wurden die Stomkabel zu Halle 1 und 2 unterirdisch verlegt. Die Freifläche ist vollständig betoniert. Eine Verlegung weiterer Kabel und Rohre ist nicht möglich. Die Stromversorgung des nachträglich gebauten Tiefkühllagers erfolgt oberirdisch in ca. 5m Höhe.
 
 \section{Neustrukturierung der IT}
 In den Filialen der MiniPreis und der zentrale sollen mittelfristig nur noch Thinclients oder terminalartige Geräte verwendet werden. Die Server sollen zentral aufgestellt und gewartet werden.
+
+Die IP-Adressen von MiniPreis sollen auf IPv6 umgestellt werden. Die Adressen befinden sich in Kapitel \ref{chapter:NetzwerkAdressen}.
 
 \chapter{Rechenzentrum}
 Die IT-Abteilung der Firma TKmin nimmt unter dem Namen TopIT Aufträge von externen Auftraggebern an. Dies können Behörden, Firmen und Privatpersonen sein.
@@ -139,14 +195,16 @@ Die Geschäftsleitung von TopIT hat sich entschlossen für die Server der Firmen
 Für TKmin gibt es einen physikalischen Server mit 6 VM (Datenbank, Dateiserver, AD mit Win Server, VoIP (Linux mit Asterisk), zwei Test-Server (für Azubis, einer mit Linux, einer mit Win-Server)). Der physikalische Server hat 3 HE. Für den Kunden MiniPreis sollen zwei weitere physikalische Server angeschafft werden.
 
 \section{Lage des Gebäudes}
-Das Gebäude liegt benachbart zu den Gebäuden von Minipreis (benachbartes Grundstück, es ist kein öffentlicher Weg zwischen den Grundstücken). Die Energieversorgung ist in Ordnung, wird von den Stadtwerken (Energieversorger, Versorger für Wasser, Fernwärme und Gas) geliefert (keine redundante Versorgung möglich).
+Das Gebäude liegt benachbart zu den Gebäuden von Minipreis (benachbartes Grundstück, es befindet sich kein öffentlicher Weg zwischen den Grundstücken). Das Gebäude ist 1955 gebaut worden. Es wurde abschnittsweise renoviert. Einige Fenster sind neu, andere von ca. 1980, weitere noch original vom Bau des Gebäudes.
 
-Das Gebäude befindet sich an einem Hang (ca. 10 \% Gefälle). Der Hang ist oberhalb und unterhalb ca 30 m lang. Im Keller ist eine automatische Hebeanlage für Abwasser und Regenwasser. Der Boden ist felsig. Unterhalb des Gebäudes wurde eine Zisterne für Regenwasser angelegt.
+Oberhalb vom Gebäude befindet sich ein Hang (ca. 10 \% Gefälle). Der Hang ist ca. 30 m lang. Im Keller des Gebäudes ist eine automatische Hebeanlage für Abwasser und Regenwasser eingebaut worden. Der Boden ist teilweise felsig. vor dem Gebäude (nicht-Hang-Seite) wurde eine Zisterne für Regenwasser angelegt.
 
 Im Rechenzentrum sind in 2 Räumen im Untergeschoss (Keller) Server von Kunden aufgestellt. In weiteren 2 Räumen im EG und 5 Räumen im ersten OG sind ebenfalls Räume für Server vorgesehen. Im zweiten OG sind Büros eingerichtet. Sie verfügen über CAT 7 Verkabelung. Die Netzwerkgeräte (Switch, Router) sind ca. 3 Jahre alt und alle von einem namhaften Hersteller. Sie sind vollfunktionsfähig, GiB tauglich, alle Switch verfügen über min. ein SFP-Slot. 5 der 10 Geräte sind auf 24 (von 24) Ports 10 GiB tauglich. Sie haben 2 SFP-Slots. Der Router ist 10 GiB tauglich. Der Hausanschlussraum befindet sich im Keller. Dort terminiert auch die LWL des Internetproviders.
 
 \section{Stromversorgung und Klimatisierung}
 Die Stromversorgung erfolgt über eine Leitung, die oberirdisch angeschlossen ist (ca. 3,5 m über einem Feldweg). Neben der Leitung befindet sich auch die Glasfaserleitung für den Telefon- und Datenanschluss. Im Boden um das Gebäude herum befinden sich einige große Findlinge (je ca. 100 t - 200 t).
+
+Die Stadtwerke melden, dass die Energieversorgung gesichert ist. Die Stadtwerke sind Versorger für Wasser, Fernwärme und Gas. Es ist keine redundante Strom-Versorgung möglich.
 
 Die Server werden provisorisch über mobile Groß-Klimageräte gekühlt. Es ist geplant die Abwärme in das Netz der Fernwärme einzuspeisen, die benötigten Maschinen (Groß-Wärmepumpe) haben Lieferschwierigkeiten (ca. 3 Monate - Angabe vom Hersteller. Interne Voraussage (inoffiziell): voraussichtlich 6 Monate Lieferfrist. Es existiert eine alte Klimaanlage, die defekt aber reparaturfähig ist. Sie soll durch die Wärmepumpe ersetzt werden.
 
@@ -162,12 +220,12 @@ Die Serverräume wurden früher als Wohnraum genutzt. Sie verfügen über eine Z
 Zurzeit werden für die Büro-PCs der Firma TopIT Backups im Wochenrhythmus für die Büro-PCs erstellt. Die Erstellung erfolgt zentral auf ein NAS. Monatlich wird ein Vollbackup erstellt, wöchentlich ein differenzielles Backup.
 
 \section{Entsorgungskonzept}
-Alte Geräte und ausgemusterte Datenträger sollen in einem Raum gelagert werde und dann entsorgt werden. Zurzeit ist der Raum noch als Lager für Baumaterialien in Verwendung. Die ausgemusterten Geräte und Datenträger lagern zurzeit hinter dem Haus in einer Gitterbox. Die Gitterbox wurde mit einem Brett (formatfüllend) und einer Kette verschlossen. Sie werden ca. einmal pro Monat von einem Entsorgungsunternehmen abgeholt. Die Geräte werden nach Vorgaben des Elektroschrotts entsorgt. Die Entsorgung Elektroschrott wird dokumentiert und von einem zertifizierten Dienstleister übernommen.
+Alte Geräte und ausgemusterte Datenträger sollen in einem Raum gelagert werden und über eine Fachfirma entsorgt werden. Zurzeit ist der Raum noch als Lager für Baumaterialien in Verwendung. Die ausgemusterten Geräte und Datenträger lagern zurzeit hinter dem Haus in einer Gitterbox. Die Gitterbox wurde mit einem Brett (formatfüllend) und einer Kette verschlossen. Sie werden ca. einmal pro Monat von einem Entsorgungsunternehmen abgeholt. Die Geräte werden nach Vorgaben des Elektroschrotts entsorgt. Die Entsorgung Elektroschrott wird dokumentiert und von einem zertifizierten Dienstleister übernommen.
 
-Andere Abfälle werden sortiert nach Altpapier, Wertstoff ("grüner Punkt" und vergleichbar) und gemischte Wertstoffe (Hausmüllähnlicher Gewerbeabfall) über Container entsorgt. Die Container stehen im Hof. Der Hof ist offen, damit die Abfuhrfahrzeuge ungehindert die Abfallcontainer leeren können. Die Container werden in der Regel wöchentlich geleert.
+Andere Abfälle werden sortiert nach Altpapier, Wertstoff ("`grüner Punkt"' und vergleichbar) und gemischte Wertstoffe (Hausmüllähnlicher Gewerbeabfall) über Container (1100\, l) entsorgt. Die Container stehen im Hof. Der Hof ist offen, damit die Abfuhrfahrzeuge ungehindert die Abfallcontainer leeren können. Die Container werden in der Regel wöchentlich geleert.
 
 \section{Videoüberwachung und Datenschutz}
-Aus Datenschutzgründen sollten weder Hof noch Zufahrt videoüberwacht sein. Nach längeren Gesprächen mit MiniPreis wird das gesamte Gelände per Video überwacht. Die Aufzeichnungen werden auf einem NAS im OG (verschlossener Raum) gespeichert und automatisch nach drei Tagen gelöscht. Der Zugriff auf das NAS erfolgt nach dem 4 Augen-Prinzip.
+Aus Datenschutzgründen sollten weder Hof noch Zufahrt videoüberwacht sein. Nach längeren Gesprächen mit MiniPreis wird das gesamte Gelände per Video überwacht. Die Aufzeichnungen werden auf einem NAS im OG des Rechenzentrums (verschlossener Raum) gespeichert und automatisch nach drei Tagen gelöscht. Der Zugriff auf das NAS erfolgt nach dem 4 Augen-Prinzip.
 
 Es gibt eine Datenschutzbeauftragte und einen Stellvertreter. Eine von beiden Personen muss sich mit einem persönlichen Hardware-Schlüssel und Passwort authentifizieren, um den Zugriff auf die Videoaufzeichnung zu ermöglichen. Falls beide Personen nicht erreicht werden können, kann die Löschung der Aufzeichnung für maximal 4 Wochen unterbrochen werden. Der Vorgang und alle Zugriffe auf das NAS werden extern in einem Rechenzentrum protokolliert. Die Authentifizierung erfolgt über einen Kerberos-Server. Der Hauptserver befindet sich im LAN des Rechenzentrums, der Backup-Server im externen Rechenzentrum.
 
@@ -178,7 +236,7 @@ Alle Switches sind VLAN fähig und min auf Layer 2 konfigurierbar. Es wurden noc
 
 In jedem Server-Rack befindet sich ein 10 GiB-tauglicher Switch. Alles Switches sind an einen zentralen Router angeschlossen. Im Büro-Bereich (2. OG) gibt es einen Switch, an den alle Büro-PCs  angeschlossen sind. Das Netzwerk ist über eine Firewall (FW, dezidiertes Gerät) nach außen abgesichert. Die FW wird automatisch aktualisiert.
 
-Das Management der Switches, des Routers und der Firewall erfolgt über das Netzwerk 10.200.254/24. Dieses Netzwerk wird nicht geroutet. Die Admin-PCs in den Büros sind in diesem LAN eingetragen (zweite IP). Es gibt die Möglichkeit per Admin-VPN von außen auf das Netzwerk zuzugreifen. Zwei Laptops sind vor eingerichtet und bei den Personen, die Bereitschaftsdienst haben. Weitere Personen der Administration können sich mit Firmengeräten und zwei-Faktor Authentifizierung ebenfalls in das Netz-Management-LAN schalten.
+Das Management der Switches, des Routers und der Firewall erfolgt über das Netzwerk 10.200.254.0/24. Dieses Netzwerk wird nicht geroutet. Die Admin-PCs in den Büros sind in diesem LAN eingetragen (zweite IP). Es gibt die Möglichkeit per Admin-VPN von außen auf das Netzwerk zuzugreifen. Zwei Laptops sind vor eingerichtet und bei den Personen, die Bereitschaftsdienst haben. Weitere Personen der Administration können sich mit Firmengeräten und zwei-Faktor Authentifizierung ebenfalls in das Netz-Management-LAN schalten.
 \clearpage
 Die Übrigen LANs sind wie folgt strukturiert:
 \begin{itemize}
@@ -194,40 +252,38 @@ Beispiel:
 \\ Erdgeschoss, Raum 5, Rack 12, Server 15:
 10.101.152.15 (eigentlich 052 + 100 für 10er-Stelle)
 
-% \chapter{Rechenzentrum von TKmin}
-% Die IT-Abteilung der Firma TKmin hat die Idee die Server der eigenen Firma und die von MiniPreis in einem eigenen, kleinen Rechenzentrum zu bündeln. Zusätzlich sollen Dienstleistungen für andere Kunden aus Industrie, Handel und Handwerk angeboten werden. Als Gebäude soll ein ehemaliges Büro- und Wohngebäude genutzt werden, das die Firma günstig erwerben konnte. Das Gebäude hat zwei Etagen (EG und OG) und ein Kellergeschoss.
-%
-% Im Gespräch sind folgende Optionen anzubieten:
-% \begin{itemize}
-%  \item Infrastructure as a Service
-%  \item Platform as a Service
-%  \item Software as a Service
-% \end{itemize}
-%
-% Es ist geplant Server zu betreiben und die IT zentral zu verwalten und -- soweit möglich -- als private Cloud zu betreiben.
-%
-% Die Geschäftsleitung von TKmin hat sich entschlossen das vorgeschlagene kleinere Rechenzentrum zu errichten. Das Rechenzentrum ist in einer
-% ehemaligen Bürogebäude am Stadtrand, auf dem benachbarten Grundstück zu den Gebäuden von Minipreis.
-%
-% \section{Lage des Gebäudes und Energieversorgung}
-% Die Energieversorgung ist in Ordnung, wurde von den Stadtwerken (Energieversorger, Versorger für Wasser, Fernwärme und Gas) zugesichert.
-%
-% Das Gebäude befindet sich in einer Talsenke (ca 1m unter üblichen Gelände). Im Keller ist eine automatische Hebeanlage für Abwasser und
-% Regenwasser.
-%
-% Die Stromversorgung erfolgt über eine Leitung, die oberirdisch angeschlossen ist (ca. 3,5 m über einem Feldweg). Neben der Leitung befindet sich auch die Glasfaserleitung für den Telefon- und Datenanschluss.
-%
-% Die Kühlung wird provisorisch über mobile Klimageräte gemacht, es ist geplant die Abwärme in das Netz der Fernwärme einzuspeisen, die
-% benötigten Maschinen haben Lieferschwierigkeiten.
-%
-% \section{Zugang zum Gebäude}
-% Der Zugangsschutz (zum Gebäude und Serverraum) wurde lange diskutiert. Es gibt einen Schließzylinder mit Sicherungskarte (gegen unerwünschte Kopien). Alle Mitarbeitende haben einen Schlüssel. Für Notfälle befindet sich ein Ersatzschlüssel am hinteren Eingang des Bürogebäudes, außen im Treppenabgang zum Keller, in dem auch die Server stehen. Die Straße ist auf der vorderen Seite des Gebäudes, der Feldweg von vorne gesehen rechts. Hinter dem Gebäude ist ein Grünstreifen mit dichter Wegetation (Bäume und Sträucher). Der Serverraum hat die gleiche Schließung, wie die Haustür. Aus Datenschutzgründen werden weder Hof noch Zufahrt videoüberwacht.
-%
-% \section{Serverräume}
-% Im Rechenzentrum sind in 5 Räumen im Untergeschoss (Keller) Server von Kunden aufgestellt. Die Serverräume wurden früher als Wohnraum genutzt. Sie verfügen über eine Zentralheizung und Fenster. Da sie älterer Bauart (Baujahr ca 1980) sind, klemmen sie teilweise. Die Fenster sind nicht mit Gittern oder Ähnlichem ausgestattet. Sie haben Rollzapfen als Verriegelung.
-%
-% \section{Entsorgungskonzept}
-% Alte Geräte und ausgemusterte Datenträger sollen in einem Raum gelagert werde und dann entsorgt werden. Zur Zeit ist der Raum noch als Lager für Baumaterialien in Verwendung. Die ausgemusterten Geräte und Datenträger lagern zur zeit hinter dem Haus in einer offenen Gitterbox. Sie werden ca. einmal pro Monat von einem Entsorgungsunternehmen abgeholt. Die Geräte werden nach Vorgaben des Elektroschrotts entsorgt. Die Entsorgung Elektroschrott wird dokumentiert und von einem Zertifizierten Dienstleister übernommen. Andere Abfälle werden sortiert nach Altpapier, Wertstoff (“grüner Punkt” und vergleichbar) und Abfall zur Behandlung (Hausmüllähnlicher Gewerbeabfall) über Container entsorgt. Die Container stehen im Hof. Der Hof ist offen, damit die Abfuhrfahrzeuge ungehindert die Abfallcontainer leeren können. Die Container werden in der Regel wöchentlich geleert.
+\chapter{Bilder}
+\begin{figure}[htbp]
+ \includegraphics[height=.5\textheight]{netzkplan_tkmin_verwaltung}
+ % netzkplan_tkmin_verwaltung.ps: 683x436 px, 72dpi, 24.09x15.38 cm, bb=0 0 683 436
+ \caption{Netzwerkplan Verwaltungsgebäude}
+ \label{fig:NetzwerkVerwaltung}
+\end{figure}
+
+\begin{figure}[htbp]
+ \includegraphics[width=.9\textwidth]{grundriss_supermarkt_v1_2.png}
+ % grundriss_supermarkt_v1_2.png: 1075x618 px, 96dpi, 28.45x16.35 cm, bb=0 0 806 464
+ \caption{Grundriss eines Supermarktes (Beispiel)}
+ \label{fig:GrundrissSupermarkt}
+\end{figure}
+
+\begin{figure}[htbp]
+ \includegraphics[height=.9\textheight]{grundriss_supermarkt_minipreis_zentrale.png}
+ % grundriss_supermarkt_minipreis_zentrale.png: 640x1097 px, 96dpi, 16.94x29.03 cm, bb=0 0 480 823
+ \caption{Lageplan der Zentrale von MiniPreis}
+ \label{fig:LageplanMiniPreisZentrale}
+\end{figure}
+
+\chapter{neue Struktur IP-Adressen}
+\label{chapter:NetzwerkAdressen}
+\begin{description}
+ \item[Konzern-Übergreifend] 2001:db8:1234:1010::/56, 192.168.250 - 192.168.255.0/24
+ \item[Chemische Dünger] 2001:db8:1234:1110::/56, 192.168.200.0/24 - 192.168.219.0/24
+ \item[TKmin] 2001:db8:1234:1200::/56, 192.168.220.0/24 - 192.168.239.0/24
+ \item[MiniPreis] 2001:db8:1234:1300::/56, 172.20.0.0/24 - 172.20.50.0/24
+\end{description}
+
+Innerhalb der Netzwerksegnemte können bei Bedarf weitere Netzwerke festgelegt werden.
 
 
 \end{document}
